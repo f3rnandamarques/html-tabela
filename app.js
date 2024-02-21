@@ -5,8 +5,8 @@ const database = [
 ];
 
 function searchByName() {
-    const searchInput = document.getElementById('searchInput').value.toLowerCase();
-    const tableBody = document.getElementById('tableBody');
+    const searchInput = document.getElementById('campoDePesquisa').value.toLowerCase();
+    const tableBody = document.getElementById('tabela');
     tableBody.innerHTML = '';
 
     const filteredData = database.filter(item => item.nome.toLowerCase().includes(searchInput));
